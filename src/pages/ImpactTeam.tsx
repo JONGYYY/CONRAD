@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PlaceholderImage } from '../components/PlaceholderImage'
+import { Reveal } from '../components/Reveal'
 
 type TeamMember = {
   name: string
@@ -26,9 +27,9 @@ const buildLog = [
 export function ImpactTeamPage() {
   return (
     <>
-      <section className="pageIntro">
+      <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
-          <div>
+          <Reveal delayMs={40}>
             <div className="eyebrow">Page 4 · Impact + Team</div>
             <h1 className="h1">Why it matters, and why us</h1>
             <p className="lead">
@@ -40,12 +41,14 @@ export function ImpactTeamPage() {
                 ← Back to the story
               </Link>
             </div>
-          </div>
-          <PlaceholderImage label="Impact photo placeholder" sublabel="Warm community moment" aspect="21/9" />
+          </Reveal>
+          <Reveal delayMs={120}>
+            <PlaceholderImage label="Impact photo placeholder" sublabel="Warm community moment" aspect="21/9" />
+          </Reveal>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section">
+      <Reveal as="section" className="section" delayMs={0}>
         <div className="container">
           <div className="sectionHeader">
             <h2 className="h2">Impact goals (target metrics)</h2>
@@ -53,33 +56,33 @@ export function ImpactTeamPage() {
           </div>
 
           <div className="metrics">
-            <div className="metricCard">
+            <Reveal className="metricCard" delayMs={40}>
               <div className="metricValue">↓</div>
               <div className="metricTitle">Reduced anxiety</div>
               <div className="metricBody">Fewer “Are you okay?” spirals—measured by caregiver stress surveys.</div>
-            </div>
-            <div className="metricCard">
+            </Reveal>
+            <Reveal className="metricCard" delayMs={90}>
               <div className="metricValue">↑</div>
               <div className="metricTitle">Independence days</div>
               <div className="metricBody">More routines completed confidently without family intervention.</div>
-            </div>
-            <div className="metricCard">
+            </Reveal>
+            <Reveal className="metricCard" delayMs={140}>
               <div className="metricValue">⏱</div>
               <div className="metricTitle">Faster help when needed</div>
               <div className="metricBody">Reduced time-to-escalation in true-need scenarios.</div>
-            </div>
-            <div className="metricCard">
+            </Reveal>
+            <Reveal className="metricCard" delayMs={190}>
               <div className="metricValue">✓</div>
               <div className="metricTitle">Trust & consent</div>
               <div className="metricBody">High opt-in retention and “felt respected” scores.</div>
-            </div>
+            </Reveal>
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section sectionTint">
+      <Reveal as="section" className="section sectionTint" delayMs={0}>
         <div className="container grid2">
-          <div className="card">
+          <Reveal className="card" delayMs={40}>
             <h2 className="h2">Who benefits</h2>
             <ul className="list">
               <li>
@@ -92,9 +95,9 @@ export function ImpactTeamPage() {
                 <strong>Communities:</strong> reduced crisis load, healthier aging-in-place outcomes.
               </li>
             </ul>
-          </div>
+          </Reveal>
 
-          <div className="card">
+          <Reveal className="card" delayMs={120}>
             <h2 className="h2">Partnerships we’d pursue</h2>
             <ul className="list">
               <li>
@@ -110,11 +113,11 @@ export function ImpactTeamPage() {
                 <strong>Caregiver groups:</strong> language, consent, and tone validation
               </li>
             </ul>
-          </div>
+          </Reveal>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section">
+      <Reveal as="section" className="section" delayMs={0}>
         <div className="container">
           <div className="sectionHeader">
             <h2 className="h2">Team</h2>
@@ -122,8 +125,8 @@ export function ImpactTeamPage() {
           </div>
 
           <div className="teamGrid">
-            {team.map((m) => (
-              <div className="teamCard" key={m.role}>
+            {team.map((m, idx) => (
+              <Reveal className="teamCard" key={m.role} delayMs={40 + idx * 55}>
                 <div className="avatar" aria-hidden="true">
                   {m.initials}
                 </div>
@@ -132,14 +135,14 @@ export function ImpactTeamPage() {
                   <div className="teamRole">{m.role}</div>
                   <div className="teamNote">{m.note}</div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
 
           <div className="spacer" />
 
           <div className="grid2">
-            <div className="card">
+            <Reveal className="card" delayMs={60}>
               <h2 className="h2">Build Log</h2>
               <p className="muted">
                 Transparency without app mechanics—this “broadcasts what we’re working on” in a judge-friendly way.
@@ -149,8 +152,8 @@ export function ImpactTeamPage() {
                   <li key={entry}>{entry}</li>
                 ))}
               </ul>
-            </div>
-            <div className="card">
+            </Reveal>
+            <Reveal className="card" delayMs={120}>
               <h2 className="h2">Contact + updates</h2>
               <p className="p">
                 Add a real email and an updates link when you’re ready. For now, these are safe placeholders.
@@ -182,18 +185,20 @@ export function ImpactTeamPage() {
                   Feasibility
                 </Link>
               </div>
-            </div>
+            </Reveal>
           </div>
 
           <div className="spacer" />
 
-          <PlaceholderImage
-            label="Optional: team photo placeholder"
-            sublabel="Warm, natural lighting · simple backgrounds"
-            aspect="21/9"
-          />
+          <Reveal delayMs={140}>
+            <PlaceholderImage
+              label="Optional: team photo placeholder"
+              sublabel="Warm, natural lighting · simple backgrounds"
+              aspect="21/9"
+            />
+          </Reveal>
         </div>
-      </section>
+      </Reveal>
     </>
   )
 }

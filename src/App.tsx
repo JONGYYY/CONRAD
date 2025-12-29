@@ -17,19 +17,22 @@ function ScrollToTop() {
 }
 
 function AppShell() {
+  const location = useLocation()
   return (
     <div className="appShell">
       <BrandStrip />
       <main className="main">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/model" element={<ModelPage />} />
-          <Route path="/feasibility" element={<FeasibilityPage />} />
-          <Route path="/impact-team" element={<ImpactTeamPage />} />
-          <Route path="/impact" element={<Navigate to="/impact-team" replace />} />
-          <Route path="/team" element={<Navigate to="/impact-team" replace />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
+        <div className="pageTransition" key={location.pathname}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/model" element={<ModelPage />} />
+            <Route path="/feasibility" element={<FeasibilityPage />} />
+            <Route path="/impact-team" element={<ImpactTeamPage />} />
+            <Route path="/impact" element={<Navigate to="/impact-team" replace />} />
+            <Route path="/team" element={<Navigate to="/impact-team" replace />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </div>
       </main>
       <Footer />
     </div>

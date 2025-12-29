@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import { PlaceholderImage } from '../components/PlaceholderImage'
+import { Reveal } from '../components/Reveal'
 
 export function HomePage() {
   return (
     <>
-      <section className="hero">
+      <Reveal as="section" className="hero" delayMs={0}>
         <div className="container heroGrid">
-          <div className="heroCopy">
+          <Reveal className="heroCopy" delayMs={40}>
             <div className="eyebrow">Innovation concept</div>
             <h1 className="heroTitle">
               Help that feels like <span className="heroEm">care</span>—not surveillance.
@@ -29,9 +30,9 @@ export function HomePage() {
               <span className="pill">Respectful</span>
               <span className="pill">Calm-by-design</span>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="heroVisual">
+          <Reveal className="heroVisual" delayMs={120}>
             <PlaceholderImage
               label="Warm photo placeholder"
               sublabel="Senior + family (real-life, not tech)"
@@ -40,13 +41,13 @@ export function HomePage() {
             <div className="caption">
               Our visual language is human-first: warm light, real moments, and quiet confidence.
             </div>
-          </div>
+          </Reveal>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section">
+      <Reveal as="section" className="section" delayMs={0}>
         <div className="container grid2">
-          <div className="card storyCard storyCardProblem">
+          <Reveal className="card storyCard storyCardProblem" delayMs={40}>
             <div className="storyKicker">The problem</div>
             <h2 className="h2 storyTitle">Aging alone turns small moments into constant worry.</h2>
 
@@ -63,9 +64,9 @@ export function HomePage() {
             <p className="p muted" style={{ marginBottom: 0 }}>
               Yet, many seniors hesitate to ask for help or use complicated technology.
             </p>
-          </div>
+          </Reveal>
 
-          <div className="card storyCard storyCardWorry">
+          <Reveal className="card storyCard storyCardWorry" delayMs={110}>
             <div className="storyKicker">Families worry constantly</div>
             <h2 className="h2 storyTitle">The questions repeat—because love has no off switch.</h2>
             <div className="questionStack" aria-label="Family worry questions">
@@ -91,9 +92,9 @@ export function HomePage() {
             <div className="worryNote">
               When reassurance is missing, families fill the silence with check-ins—often at the cost of dignity.
             </div>
-          </div>
+          </Reveal>
 
-          <div className="card">
+          <Reveal className="card" delayMs={180}>
             <h2 className="h2">The insight</h2>
             <p className="p">
               What everyone misses is that <strong>support is emotional</strong>. It’s not just “detecting events”—it’s
@@ -104,13 +105,13 @@ export function HomePage() {
               “The best help feels invisible—until you need it.”
               <div className="quoteBy">GrandGuardian design principle</div>
             </div>
-          </div>
+          </Reveal>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section sectionTint">
+      <Reveal as="section" className="section sectionTint" delayMs={0}>
         <div className="container grid2">
-          <div className="card">
+          <Reveal className="card" delayMs={40}>
             <h2 className="h2">Literature Inspiration</h2>
             <div className="quote">
               “Things have a life of their own… it’s simply a matter of waking up their souls.”
@@ -124,9 +125,9 @@ export function HomePage() {
               That’s why we created GrandGuardian: A powerful tool to “wake up memories” through the voices of those
               they love.
             </p>
-          </div>
+          </Reveal>
 
-          <div className="card">
+          <Reveal className="card" delayMs={120}>
             <h2 className="h2">What the brand feels like</h2>
             <p className="p">
               Warm, restrained, and human. GrandGuardian isn’t “tech-first”—it’s voice-first: comfort, familiarity, and
@@ -137,11 +138,11 @@ export function HomePage() {
               sublabel="Warm, real-life moment · family voice connection"
               aspect="16/9"
             />
-          </div>
+          </Reveal>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section sectionTint">
+      <Reveal as="section" className="section sectionTint" delayMs={0}>
         <div className="container">
           <div className="sectionHeader">
             <h2 className="h2">Mission · Vision · Values</h2>
@@ -151,17 +152,17 @@ export function HomePage() {
           </div>
 
           <div className="grid3">
-            <div className="card">
+            <Reveal className="card" delayMs={40}>
               <h3 className="h3">Mission</h3>
               <p className="p">Make everyday support feel calm, respectful, and human—so independence lasts longer.</p>
-            </div>
-            <div className="card">
+            </Reveal>
+            <Reveal className="card" delayMs={100}>
               <h3 className="h3">Vision</h3>
               <p className="p">
                 A world where aging at home is guided by dignity—where help arrives softly, before fear grows.
               </p>
-            </div>
-            <div className="card">
+            </Reveal>
+            <Reveal className="card" delayMs={160}>
               <h3 className="h3">Values</h3>
               <ul className="list">
                 <li>
@@ -174,14 +175,14 @@ export function HomePage() {
                   <strong>Trust is earned</strong> (explainable, predictable behavior)
                 </li>
               </ul>
-            </div>
+            </Reveal>
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section">
+      <Reveal as="section" className="section" delayMs={0}>
         <div className="container">
-          <div className="narrative">
+          <Reveal className="narrative" delayMs={40}>
             <h2 className="h2">Personal Inspiration</h2>
             <div className="inspirationGrid">
               <div className="inspirationVisual">
@@ -219,9 +220,9 @@ export function HomePage() {
                 Can this work?
               </Link>
             </div>
-          </div>
+          </Reveal>
         </div>
-      </section>
+      </Reveal>
     </>
   )
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PlaceholderImage } from '../components/PlaceholderImage'
+import { Reveal } from '../components/Reveal'
 
 function SystemDiagramImage() {
   const [imageError, setImageError] = useState(false)
@@ -124,9 +125,9 @@ const steps: ModelStep[] = [
 export function ModelPage() {
   return (
     <>
-      <section className="pageIntro">
+      <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
-          <div>
+          <Reveal delayMs={40}>
             <div className="eyebrow">Page 2 · The App</div>
             <h1 className="h1">The App</h1>
             <p className="lead">
@@ -138,16 +139,18 @@ export function ModelPage() {
                 Next: Feasibility →
               </Link>
             </div>
-          </div>
-          <PlaceholderImage
-            label="App overview placeholder"
-            sublabel="7 steps · one companion experience"
-            aspect="21/9"
-          />
+          </Reveal>
+          <Reveal delayMs={120}>
+            <PlaceholderImage
+              label="App overview placeholder"
+              sublabel="7 steps · one companion experience"
+              aspect="21/9"
+            />
+          </Reveal>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section">
+      <Reveal as="section" className="section" delayMs={0}>
         <div className="container">
           <div className="sectionHeader">
             <h2 className="h2">Seven features (inside the app)</h2>
@@ -155,8 +158,8 @@ export function ModelPage() {
           </div>
 
           <div className="grid2">
-            {steps.map((step) => (
-              <div className="card" key={step.title}>
+            {steps.map((step, idx) => (
+              <Reveal className="card" key={step.title} delayMs={40 + idx * 55}>
                 <h3 className="h3">{step.title}</h3>
                 <div className="appStep">
                   <div className="appStepSection">
@@ -177,19 +180,19 @@ export function ModelPage() {
                   </div>
                 </div>
                 <PlaceholderImage label={step.imageLabel} sublabel={step.imageSublabel} aspect="16/9" />
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section sectionTint">
+      <Reveal as="section" className="section sectionTint" delayMs={0}>
         <div className="container">
           <div className="sectionHeader">
             <h2 className="h2">Three pillars (the design principles)</h2>
           </div>
           <div className="pillars">
-            <div className="pillar pillarFamiliarity">
+            <Reveal className="pillar pillarFamiliarity" delayMs={40}>
               <div className="pillarCap">
                 <div className="pillarMedallion" aria-hidden="true">
                   ♡
@@ -203,9 +206,9 @@ export function ModelPage() {
                 </div>
               </div>
               <div className="pillarBase" aria-hidden="true" />
-            </div>
+            </Reveal>
 
-            <div className="pillar pillarRestraint">
+            <Reveal className="pillar pillarRestraint" delayMs={110}>
               <div className="pillarCap">
                 <div className="pillarMedallion" aria-hidden="true">
                   ∿
@@ -220,9 +223,9 @@ export function ModelPage() {
                 </div>
               </div>
               <div className="pillarBase" aria-hidden="true" />
-            </div>
+            </Reveal>
 
-            <div className="pillar pillarDignity">
+            <Reveal className="pillar pillarDignity" delayMs={180}>
               <div className="pillarCap">
                 <div className="pillarMedallion" aria-hidden="true">
                   ◇
@@ -236,22 +239,22 @@ export function ModelPage() {
                 </div>
               </div>
               <div className="pillarBase" aria-hidden="true" />
-            </div>
+            </Reveal>
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="section">
+      <Reveal as="section" className="section" delayMs={0}>
         <div className="container">
-          <div className="card">
+          <Reveal className="card" delayMs={60}>
             <h2 className="h2">System Diagram</h2>
             <p className="p">
               A visual overview of the GrandGuardian app ecosystem: senior app, family app, voice library, and care logic.
             </p>
             <SystemDiagramImage />
-          </div>
+          </Reveal>
         </div>
-      </section>
+      </Reveal>
     </>
   )
 }

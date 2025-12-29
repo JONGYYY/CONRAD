@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
+import { Reveal } from '../components/Reveal'
 
 export function NotFoundPage() {
   return (
-    <section className="section">
+    <Reveal as="section" className="section" delayMs={0}>
       <div className="container">
-        <div className="card">
+        <Reveal className="card" delayMs={60}>
           <div className="eyebrow">404</div>
           <h1 className="h1">That page isn’t here</h1>
           <p className="p">If you followed a link, it may have changed. Use the navigation above to continue.</p>
@@ -16,9 +17,9 @@ export function NotFoundPage() {
               See the App
             </Link>
           </div>
-        </div>
+        </Reveal>
       </div>
-    </section>
+    </Reveal>
   )
 }
 

@@ -16,6 +16,13 @@
   --radius-md: 14px;
   --radius-sm: 12px;
 
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 140ms;
+  --dur-2: 220ms;
+  --dur-3: 420ms;
+
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.45;
   font-weight: 450;
@@ -58,9 +65,38 @@ a {
   flex: 1;
 }
 
+/* Route transition */
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pageTransition {
+  animation: page-enter var(--dur-3) var(--ease-out) both;
+}
+
 .container {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity var(--dur-3) var(--ease-out), transform var(--dur-3) var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.revealIn {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Brand strip */
@@ -71,6 +107,18 @@ a {
   backdrop-filter: blur(10px);
   background: rgba(251, 250, 248, 0.72);
   border-bottom: 1px solid rgba(27, 28, 30, 0.08);
+  animation: header-enter var(--dur-3) var(--ease-out) both;
+}
+
+@keyframes header-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .brandStripInner {
@@ -124,7 +172,23 @@ a {
   padding: 8px 12px;
   border-radius: 999px;
   color: rgba(27, 28, 30, 0.76);
-  transition: background 160ms ease, color 160ms ease;
+  position: relative;
+  transition: background var(--dur-2) var(--ease-out), color var(--dur-2) var(--ease-out);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 6px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(31, 135, 121, 0.7), rgba(216, 154, 78, 0.8));
+  transform: scaleX(0);
+  transform-origin: center;
+  opacity: 0;
+  transition: transform var(--dur-2) var(--ease-out), opacity var(--dur-2) var(--ease-out);
 }
 
 .navLink:hover {
@@ -135,6 +199,11 @@ a {
 .navLinkActive {
   background: rgba(31, 135, 121, 0.16);
   color: rgba(27, 28, 30, 0.95);
+}
+
+.navLinkActive::after {
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 .brandActions {
@@ -160,7 +229,8 @@ a {
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.72);
   box-shadow: 0 8px 26px rgba(18, 20, 22, 0.06);
-  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease, border-color 140ms ease;
+  transition: transform var(--dur-1) var(--ease-out), box-shadow var(--dur-2) var(--ease-out),
+    background var(--dur-2) var(--ease-out), border-color var(--dur-2) var(--ease-out);
 }
 
 .button:hover {
@@ -282,6 +352,19 @@ a {
   background: rgba(255, 255, 255, 0.72);
   box-shadow: var(--shadow);
   padding: 18px;
+}
+
+@media (hover: hover) {
+  .card {
+    transition: transform var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-out),
+      border-color var(--dur-2) var(--ease-out);
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 60px rgba(18, 20, 22, 0.12);
+    border-color: rgba(31, 135, 121, 0.18);
+  }
 }
 
 .list {
@@ -607,6 +690,23 @@ a {
   background:
     linear-gradient(135deg, rgba(31, 135, 121, 0.16), rgba(216, 154, 78, 0.14)),
     repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.26) 10px, rgba(255, 255, 255, 0.12) 10px, rgba(255, 255, 255, 0.12) 20px);
+  background-size: 140% 140%;
+  animation: placeholder-sheen 18s linear infinite;
+}
+
+@keyframes placeholder-sheen {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@media (hover: hover) {
+  .placeholderFrame:hover .placeholderFill {
+    animation-duration: 6s;
+  }
 }
 
 .placeholderOverlay {
@@ -1250,5 +1350,31 @@ a {
 
   .inspirationGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Respect accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+  .brandStrip {
+    animation: none !important;
+  }
+
+  .pageTransition {
+    animation: none !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .pillar:hover .pillarMedallion,
+  .pillar:focus-within .pillarMedallion {
+    animation: none !important;
+  }
+
+  .placeholderFill {
+    animation: none !important;
   }
 }
