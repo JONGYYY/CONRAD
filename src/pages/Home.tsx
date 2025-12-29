@@ -17,7 +17,7 @@ export function HomePage() {
             </p>
             <div className="heroActions">
               <Link to="/model" className="button buttonPrimary">
-                See the Model
+                See the App
               </Link>
               <Link to="/impact-team" className="button buttonGhost">
                 Why it matters
@@ -213,7 +213,7 @@ export function HomePage() {
             </div>
             <div className="ctaRow">
               <Link to="/model" className="button buttonPrimary">
-                See the Model
+                See the App
               </Link>
               <Link to="/feasibility" className="button buttonSecondary">
                 Can this work?

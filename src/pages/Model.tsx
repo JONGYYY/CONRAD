@@ -3,60 +3,95 @@ import { PlaceholderImage } from '../components/PlaceholderImage'
 
 type ModelStep = {
   title: string
-  description: string
+  what: string
+  how: string[]
+  why: string
   imageLabel: string
   imageSublabel: string
 }
 
 const steps: ModelStep[] = [
   {
-    title: 'Step 1 — The day has a rhythm',
-    description:
-      'GrandGuardian begins by learning the gentle shape of a day—habits, timing, and what “normal” feels like for one person.',
+    title: 'Step 1: Voice Cloning',
+    what: 'Create a voice clone of a loved one so support sounds like love.',
+    how: [
+      'Create a voice clone using ElevenLabs through uploading the user’s loved one’s voice.',
+      'Use the API (Voice ID) and connect to MIT App Inventor.',
+      'Generate a real-time, personalized voice of a loved one based on their needs.',
+    ],
+    why: 'Providing reminders and sharing stories helps create long-lasting memories, reduce anxiety, and deepen family bonds.',
     imageLabel: 'Step 1 placeholder',
-    imageSublabel: 'Daily rhythm · routines as a soft baseline',
+    imageSublabel: 'Upload voice → Voice ID → real-time loved voice',
   },
   {
-    title: 'Step 2 — Notice the quiet drift',
-    description:
-      'Instead of hunting for “events,” it notices subtle drift: hesitation, confusion, or a routine that doesn’t quite complete.',
+    title: 'Step 2: Object Detector',
+    what: 'Turn real-world obstacles into calm spoken alerts.',
+    how: [
+      'Connect the app to ChatGPT’s Image Classification.',
+      'When the user opens the app, the phone’s camera continuously monitors the surroundings to detect obstacles in real time.',
+      'Convert detections into spoken alerts in the familiar, comforting voice of a loved one using ElevenLabs voice cloning.',
+    ],
+    why: 'Real-time guidance in a trusted voice can reduce anxiety and improve confidence while moving through the world.',
     imageLabel: 'Step 2 placeholder',
-    imageSublabel: 'Drift detection · uncertainty before panic',
+    imageSublabel: 'Camera → classification → loved-voice alert',
   },
   {
-    title: 'Step 3 — Choose a human voice',
-    description:
-      'The model selects the right kind of comfort: a family voice, a familiar phrase, and a tone that doesn’t startle.',
+    title: 'Step 3: Story Time',
+    what: 'Read-aloud stories for emotional support, narrated in a loved one’s voice.',
+    how: [
+      'Users can select from 6 storytelling styles: Family, Memories, Animals, Kindness, Bedtime, and Shuffle.',
+      'Stories are narrated in a loved one’s voice to provide comfort and connection.',
+    ],
+    why: 'Personalized storytelling brings comfort, joy, and emotional connection through familiar narration.',
     imageLabel: 'Step 3 placeholder',
-    imageSublabel: 'Family voice · emotional care, not alarms',
+    imageSublabel: '6 styles · loved-voice narration',
   },
   {
-    title: 'Step 4 — Offer gentle guidance',
-    description:
-      'A calm prompt arrives like a hand on the shoulder—clear, short, respectful—so the person can decide what to do next.',
+    title: 'Step 4: First Aid',
+    what: 'A bystander-friendly emergency profile that can announce critical information fast.',
+    how: [
+      'Users set up First Aid information: name, age, gender, medical history, current medications (including medication locations), heart rate range, allergies, blood type, other notes, and emergency contacts.',
+      'Bystanders press “Announce Information” to quickly announce the user’s information in case of an emergency.',
+    ],
+    why: 'When seconds matter, this helps people nearby respond with clarity and confidence.',
     imageLabel: 'Step 4 placeholder',
-    imageSublabel: 'Guidance · autonomy preserved',
+    imageSublabel: 'Emergency profile → announce button',
   },
   {
-    title: 'Step 5 — Wait with restraint',
-    description:
-      'Silence is part of care. GrandGuardian waits, listens, and avoids turning life into constant interruptions.',
+    title: 'Step 5: Reminders',
+    what: 'Smart reminders for medications and events—spoken in a loved one’s voice.',
+    how: [
+      'Users can add, edit, and delete medication and event reminders.',
+      'Text-to-speech uses a loved one’s voice to announce upcoming appointments, events, and medication intake times.',
+    ],
+    why: 'Turns routines into reassurance—supportive, familiar, and easy to follow.',
     imageLabel: 'Step 5 placeholder',
-    imageSublabel: 'Restraint · fewer, better moments',
+    imageSublabel: 'Medication + events → loved-voice reminders',
   },
   {
-    title: 'Step 6 — Escalate with context',
-    description:
-      'If help is needed, it escalates with context: what changed, what was tried, and what would be most respectful now.',
+    title: 'Step 6: SOS - Heart Rate Monitoring',
+    what: 'Automatic SOS based on heart rate monitoring via Bluetooth.',
+    how: [
+      'Connect a heart rate monitoring device to the app through Bluetooth communication.',
+      'Users set a monitoring measurement based on health condition and recommendations from a doctor.',
+      'When the user’s heart rate exceeds the pre-set range due to an unhealthy condition or sudden fall, the sensor captures it immediately and the app shows “out-of-range.”',
+      'A real-time message is sent to the emergency contact. At the same time, alarms go off to alert people around, calling for help.',
+    ],
+    why: 'Escalates quickly when it matters most—help can arrive sooner with less guesswork.',
     imageLabel: 'Step 6 placeholder',
-    imageSublabel: 'Escalation · context-rich, dignified',
+    imageSublabel: 'Bluetooth HR → thresholds → SOS + alarm',
   },
   {
-    title: 'Step 7 — Strengthen memory over time',
-    description:
-      'Each moment becomes a gentle reinforcement—“waking up memories” through repetition, familiarity, and loved voices.',
+    title: 'Step 7: Invisible Fall Detection',
+    what: 'Hands-free fall detection using the phone’s motion sensors (no button or wearable needed).',
+    how: [
+      'Detects falls using the phone’s motion sensors — no button or wearable device needed.',
+      'Triggers alert if a fall is detected and not recovered within 5 seconds.',
+      'Reduces false alarms from accidental phone drops.',
+    ],
+    why: 'Discreet safety that stays in the background—ready when needed, quiet when not.',
     imageLabel: 'Step 7 placeholder',
-    imageSublabel: 'Memory support · comfort that endures',
+    imageSublabel: 'Motion sensors → detect → confirm → alert',
   },
 ]
 
@@ -66,11 +101,11 @@ export function ModelPage() {
       <section className="pageIntro">
         <div className="container introGrid">
           <div>
-            <div className="eyebrow">Page 2 · The Model</div>
-            <h1 className="h1">What the innovation is: A Voice of Love for the Elderly Powered by AI</h1>
+            <div className="eyebrow">Page 2 · The App</div>
+            <h1 className="h1">The App</h1>
             <p className="lead">
-              Think of GrandGuardian like a museum exhibit: a concept you can understand at a glance—built from warmth,
-              restraint, and the emotional truth of a familiar voice.
+              GrandGuardian is designed as a single companion experience made of seven building blocks—each one focused
+              on safety, comfort, and connection through a loved one’s voice.
             </p>
             <div className="introLinks">
               <Link className="textLink" to="/feasibility">
@@ -79,8 +114,8 @@ export function ModelPage() {
             </div>
           </div>
           <PlaceholderImage
-            label="Concept diagram hero placeholder"
-            sublabel="A seven-step care model (concept, not a feature list)"
+            label="App overview placeholder"
+            sublabel="7 steps · one companion experience"
             aspect="21/9"
           />
         </div>
@@ -97,7 +132,24 @@ export function ModelPage() {
             {steps.map((step) => (
               <div className="card" key={step.title}>
                 <h3 className="h3">{step.title}</h3>
-                <p className="p">{step.description}</p>
+                <div className="appStep">
+                  <div className="appStepSection">
+                    <div className="appStepLabel">What it is</div>
+                    <div className="appStepText">{step.what}</div>
+                  </div>
+                  <div className="appStepSection">
+                    <div className="appStepLabel">How it works</div>
+                    <ul className="appStepList">
+                      {step.how.map((line) => (
+                        <li key={line}>{line}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="appStepSection">
+                    <div className="appStepLabel">Why it matters</div>
+                    <div className="appStepText">{step.why}</div>
+                  </div>
+                </div>
                 <PlaceholderImage label={step.imageLabel} sublabel={step.imageSublabel} aspect="16/9" />
               </div>
             ))}

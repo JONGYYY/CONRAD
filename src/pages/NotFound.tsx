@@ -13,7 +13,7 @@ export function NotFoundPage() {
               Back Home
             </Link>
             <Link to="/model" className="button buttonGhost">
-              See the Model
+              See the App
             </Link>
           </div>
         </div>

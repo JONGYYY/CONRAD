@@ -3,7 +3,7 @@ import { BrandLogo } from './BrandLogo'
 
 const navItems = [
   { to: '/', label: 'Home' },
-  { to: '/model', label: 'The Model' },
+  { to: '/model', label: 'The App' },
   { to: '/feasibility', label: 'Feasibility' },
   { to: '/impact-team', label: 'Impact + Team' },
 ] as const
@@ -35,7 +35,7 @@ export function BrandStrip() {
 
         <div className="brandActions">
           <Link to="/model" className="button buttonPrimary">
-            See the Model
+            See the App
           </Link>
         </div>
       </div>
