@@ -574,6 +574,20 @@ a {
   margin-top: 12px;
 }
 
+/* System diagram image */
+.systemDiagramWrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(27, 28, 30, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.systemDiagram {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Placeholder frames */
 .placeholderFrame {
   border-radius: var(--radius-lg);

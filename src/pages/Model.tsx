@@ -1,5 +1,31 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PlaceholderImage } from '../components/PlaceholderImage'
+
+function SystemDiagramImage() {
+  const [imageError, setImageError] = useState(false)
+
+  if (imageError) {
+    return (
+      <PlaceholderImage
+        label="System Diagram placeholder"
+        sublabel="GrandGuardian app ecosystem"
+        aspect="21/9"
+      />
+    )
+  }
+
+  return (
+    <div className="systemDiagramWrapper">
+      <img
+        src="/images/system-diagram.png"
+        alt="GrandGuardian app ecosystem diagram"
+        className="systemDiagram"
+        onError={() => setImageError(true)}
+      />
+    </div>
+  )
+}
 
 type ModelStep = {
   title: string
@@ -191,14 +217,9 @@ export function ModelPage() {
           <div className="card">
             <h2 className="h2">System Diagram</h2>
             <p className="p">
-              Replace this with a clean visual that shows the app ecosystem at a glance (senior app, family app, voice
-              library, and care logic).
+              A visual overview of the GrandGuardian app ecosystem: senior app, family app, voice library, and care logic.
             </p>
-            <PlaceholderImage
-              label="System Diagram placeholder"
-              sublabel="GrandGuardian app ecosystem"
-              aspect="21/9"
-            />
+            <SystemDiagramImage />
           </div>
         </div>
       </section>
