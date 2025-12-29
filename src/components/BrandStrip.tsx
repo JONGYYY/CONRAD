@@ -1,5 +1,5 @@
 import { NavLink, Link } from 'react-router-dom'
-import { LogoMark } from './LogoMark'
+import { BrandLogo } from './BrandLogo'
 
 const navItems = [
   { to: '/', label: 'Home' },
@@ -13,7 +13,7 @@ export function BrandStrip() {
     <header className="brandStrip" role="banner">
       <div className="container brandStripInner">
         <Link to="/" className="brandLockup" aria-label="GrandGuardian: Home">
-          <LogoMark className="logoMark" />
+          <BrandLogo className="logoMark" />
           <div className="brandText">
             <div className="brandName">GrandGuardian</div>
             <div className="brandTagline">Calm support that preserves dignity.</div>
