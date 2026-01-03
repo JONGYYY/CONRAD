@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { PlaceholderImage } from '../components/PlaceholderImage'
 import { Reveal } from '../components/Reveal'
+import { useState } from 'react'
 
 type TeamMember = {
   name: string
@@ -24,6 +25,17 @@ const buildLog = [
   'We drafted a pilot plan oriented around trust, not just detection.',
 ]
 
+function TeamAvatar({ member }: { member: TeamMember }) {
+  const [imageError, setImageError] = useState(false)
+  const slug = member.name.toLowerCase().replace(/\s+/g, '-')
+  const src = `/images/team/${slug}.png`
+  const showImg = !imageError
+  return showImg ? (
+    <img className="teamHeroImg" src={src} alt={member.name} onError={() => setImageError(true)} />
+  ) : (
+    <div className="avatarImgAlt">{member.initials}</div>
+  )
+}
 export function TeamPage() {
   return (
     <>
@@ -42,7 +54,16 @@ export function TeamPage() {
             </div>
           </Reveal>
           <Reveal delayMs={120}>
-            <PlaceholderImage label="Team photo placeholder" sublabel="Warm community moment" aspect="21/9" />
+            <div className="teamHeroGrid" role="group" aria-label="Team members">
+              {team.slice(0, 4).map((m) => (
+                <div className="teamHeroItem" key={m.name}>
+                  <div className="teamHeroPhoto" aria-hidden="true">
+                    <TeamAvatar member={m} />
+                  </div>
+                  <div className="teamHeroName">{m.name}</div>
+                </div>
+              ))}
+            </div>
           </Reveal>
         </div>
       </Reveal>
