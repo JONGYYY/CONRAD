@@ -95,9 +95,9 @@ export function TeamPage() {
           <div className="grid2">
             <Reveal className="card" delayMs={60}>
               <h2 className="h2">Build Log</h2>
-              <p className="muted">
+              {/* <p className="muted">
                 Transparency without app mechanics—this “broadcasts what we’re working on” in a judge-friendly way.
-              </p>
+              </p> */}
               <ul className="list">
                 {buildLog.map((entry) => (
                   <li key={entry}>{entry}</li>
@@ -106,9 +106,9 @@ export function TeamPage() {
             </Reveal>
             <Reveal className="card" delayMs={120}>
               <h2 className="h2">Contact + updates</h2>
-              <p className="p">
+              {/* <p className="p">
                 Add a real email and an updates link when you’re ready. For now, these are safe placeholders.
-              </p>
+              </p> */}
               <div className="contactBox">
                 <div className="contactRow">
                   <div className="contactLabel">Email</div>

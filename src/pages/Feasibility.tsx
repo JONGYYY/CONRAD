@@ -175,7 +175,7 @@ export function FeasibilityPage() {
 
           <Reveal className="ctaRow" delayMs={220}>
             <Link to="/impact" className="button buttonPrimary">
-              Impact + Team
+              Impact 
             </Link>
             <Link to="/model" className="button buttonGhost">
               Back to the App
