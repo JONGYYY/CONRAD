@@ -70,11 +70,11 @@ export function TeamPage() {
 
       <Reveal as="section" className="section" delayMs={0}>
         <div className="container">
-          <div className="sectionHeader">
+          {/* <div className="sectionHeader">
             <h2 className="h2">Team</h2>
             <p className="muted">Swap names, roles, and photos anytime. Placeholders are intentional.</p>
-          </div>
-
+          </div> */}
+{/* 
           <div className="teamGrid">
             {team.map((m, idx) => (
               <Reveal className="teamCard" key={m.role} delayMs={40 + idx * 55}>
@@ -88,7 +88,7 @@ export function TeamPage() {
                 </div>
               </Reveal>
             ))}
-          </div>
+          </div> */}
 
           <div className="spacer" />
 
