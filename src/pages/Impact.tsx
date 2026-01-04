@@ -2,13 +2,6 @@ import { Link } from 'react-router-dom'
 import { PlaceholderImage } from '../components/PlaceholderImage'
 import { Reveal } from '../components/Reveal'
 
-type TeamMember = {
-  name: string
-  role: string
-  initials: string
-  note: string
-}
-
 export function ImpactPage() {
   return (
     <>
