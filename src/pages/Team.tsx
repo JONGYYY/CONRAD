@@ -42,13 +42,13 @@ export function TeamPage() {
       <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
           <Reveal delayMs={40}>
-            <div className="eyebrow">Page 5 ·  Team</div>
+            <div className="eyebrow">Page 6 · Team</div>
             <h1 className="h1">Who we are</h1>
             <p className="lead">
               A Voice of Love for the Elderly Powered by AI.
             </p>
             <div className="introLinks">
-              <Link className="textLink" to="/impact ">
+              <Link className="textLink" to="/impact">
                 ← Back to the Impact
               </Link>
             </div>

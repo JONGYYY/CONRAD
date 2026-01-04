@@ -8,13 +8,19 @@ export function ImpactPage() {
       <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
           <Reveal delayMs={40}>
-            <div className="eyebrow">Page 4 · Impact</div>
+            <div className="eyebrow">Page 5 · Impact</div>
             <h1 className="h1">Why it matters</h1>
             <p className="lead">
               GrandGuardian is built around a simple belief: when support preserves dignity, independence lasts longer
               and families worry less.
             </p>
             <div className="introLinks">
+              <Link className="textLink" to="/business-plan">
+                ← Back: Business Plan
+              </Link>
+              <span className="bpIntroDivider" aria-hidden="true">
+                ·
+              </span>
               <Link className="textLink" to="/">
                 ← Back to the story
               </Link>

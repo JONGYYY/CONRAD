@@ -4,6 +4,7 @@ import { BrandStrip } from './components/BrandStrip'
 import { Footer } from './components/Footer'
 import { FeasibilityPage } from './pages/Feasibility'
 import { HomePage } from './pages/Home'
+import { BusinessPlanPage } from './pages/BusinessPlan'
 import { ImpactPage } from './pages/Impact'
 import { TeamPage } from './pages/Team'
 import { ModelPage } from './pages/Model'
@@ -28,6 +29,7 @@ function AppShell() {
             <Route path="/" element={<HomePage />} />
             <Route path="/model" element={<ModelPage />} />
             <Route path="/feasibility" element={<FeasibilityPage />} />
+            <Route path="/business-plan" element={<BusinessPlanPage />} />
             <Route path="/impact" element={<ImpactPage />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="*" element={<NotFoundPage />} />

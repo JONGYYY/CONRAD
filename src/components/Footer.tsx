@@ -21,6 +21,9 @@ export function Footer() {
           <Link className="footerLink" to="/feasibility">
             Feasibility
           </Link>
+          <Link className="footerLink" to="/business-plan">
+            Business Plan
+          </Link>
           <Link className="footerLink" to="/impact">
             Impact
           </Link>
