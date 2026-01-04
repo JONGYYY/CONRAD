@@ -5,7 +5,7 @@ export function HomePage() {
   return (
     <>
       <Reveal as="section" className="hero" delayMs={0}>
-        <div className="container heroGrid">
+        <div className="container heroGrid heroGridSingle">
           <Reveal className="heroCopy" delayMs={40}>
             <div className="eyebrow">Innovation concept</div>
             <h1 className="heroTitle">
@@ -28,19 +28,6 @@ export function HomePage() {
               <span className="pill">Warm</span>
               <span className="pill">Respectful</span>
               <span className="pill">Calm-by-design</span>
-            </div>
-          </Reveal>
-
-          <Reveal className="heroVisual" delayMs={120}>
-            <div className="heroPanel" aria-hidden="true">
-              <div className="heroPanelFrame">
-                <div className="heroPanelGlow" />
-                <div className="heroPanelBars" />
-                <div className="heroPanelDots" />
-              </div>
-            </div>
-            <div className="caption">
-              Our visual language is human-first: warm light, real moments, and quiet confidence.
             </div>
           </Reveal>
         </div>

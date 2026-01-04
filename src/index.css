@@ -590,6 +590,10 @@ a {
   align-items: center;
 }
 
+.heroGridSingle {
+  grid-template-columns: 1fr;
+}
+
 .heroTitle {
   font-size: clamp(36px, 4.1vw, 54px);
   line-height: 1.02;
