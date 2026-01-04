@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { PlaceholderImage } from '../components/PlaceholderImage'
 import { Reveal } from '../components/Reveal'
 import { useState } from 'react'
 
@@ -141,12 +140,9 @@ export function TeamPage() {
 
           <div className="spacer" />
 
-          <Reveal delayMs={140}>
-            <PlaceholderImage
-              label="Optional: team photo placeholder"
-              sublabel="Warm, natural lighting · simple backgrounds"
-              aspect="21/9"
-            />
+          <Reveal className="quote" delayMs={140}>
+            “We’re building a concept that feels human first: calm, consented, and easy to adopt.”
+            <div className="quoteBy">Team principle</div>
           </Reveal>
         </div>
       </Reveal>

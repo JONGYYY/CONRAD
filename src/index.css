@@ -649,6 +649,96 @@ a {
   font-size: 13px;
 }
 
+/* Home: hero visual (no image) */
+.heroPanel {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(27, 28, 30, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.heroPanelFrame {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  padding: 16px;
+  display: grid;
+  align-content: end;
+  gap: 12px;
+  background:
+    radial-gradient(520px 220px at 15% 0%, rgba(31, 135, 121, 0.18), transparent 60%),
+    radial-gradient(520px 240px at 100% 20%, rgba(216, 154, 78, 0.2), transparent 62%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.42));
+}
+
+.heroPanelGlow {
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+  background:
+    radial-gradient(220px 120px at 12% 18%, rgba(31, 135, 121, 0.22), transparent 70%),
+    radial-gradient(260px 140px at 90% 28%, rgba(216, 154, 78, 0.22), transparent 72%);
+  opacity: 0.75;
+}
+
+.heroPanelBars {
+  height: 26px;
+  border-radius: 999px;
+  border: 1px solid rgba(31, 135, 121, 0.18);
+  background:
+    linear-gradient(90deg, rgba(31, 135, 121, 0.14), rgba(216, 154, 78, 0.14)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(27, 28, 30, 0.34) 0,
+      rgba(27, 28, 30, 0.34) 2px,
+      transparent 2px,
+      transparent 8px
+    );
+  mask-image: radial-gradient(220px 32px at 0% 50%, black 55%, transparent 100%);
+  position: relative;
+}
+
+.heroPanelDots {
+  height: 8px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, rgba(27, 28, 30, 0.18) 2px, transparent 3px) 0 0 / 16px 8px,
+    linear-gradient(90deg, rgba(31, 135, 121, 0.18), rgba(216, 154, 78, 0.18));
+  opacity: 0.75;
+}
+
+.brandImageFrame {
+  margin-top: 12px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(27, 28, 30, 0.12);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: var(--shadow);
+}
+
+.brandImageFill {
+  aspect-ratio: 16 / 9;
+  background:
+    radial-gradient(520px 240px at 20% 0%, rgba(31, 135, 121, 0.18), transparent 60%),
+    radial-gradient(520px 240px at 100% 20%, rgba(216, 154, 78, 0.18), transparent 62%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.4));
+}
+
+.polaroidPhoto {
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(27, 28, 30, 0.12);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.polaroidPhotoInner {
+  aspect-ratio: 3 / 2;
+  background:
+    radial-gradient(520px 240px at 20% 0%, rgba(31, 135, 121, 0.16), transparent 60%),
+    radial-gradient(520px 240px at 100% 20%, rgba(216, 154, 78, 0.16), transparent 62%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.38));
+}
+
 /* Intro */
 .pageIntro {
   padding: 44px 0 18px;
@@ -1283,6 +1373,108 @@ a {
 
 .tierList li {
   margin: 8px 0;
+}
+
+.feasibilityIntroCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.feasibilityIntroCard::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+  background:
+    radial-gradient(520px 240px at 0% 0%, rgba(31, 135, 121, 0.14), transparent 62%),
+    radial-gradient(520px 240px at 100% 10%, rgba(216, 154, 78, 0.14), transparent 66%);
+  opacity: 0.85;
+}
+
+.feasibilityIntroCard > * {
+  position: relative;
+}
+
+.feasibilityIntroKicker {
+  font-size: 12px;
+  font-weight: 820;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(27, 28, 30, 0.62);
+}
+
+.feasibilityIntroTitle {
+  margin-top: 8px;
+  font-weight: 920;
+  letter-spacing: -0.02em;
+}
+
+.impactIntroCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.impactIntroCard::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+  background:
+    radial-gradient(520px 240px at 10% 0%, rgba(31, 135, 121, 0.12), transparent 60%),
+    radial-gradient(520px 240px at 100% 20%, rgba(216, 154, 78, 0.14), transparent 62%);
+  opacity: 0.85;
+}
+
+.impactIntroCard > * {
+  position: relative;
+}
+
+.impactIntroKicker {
+  font-size: 12px;
+  font-weight: 820;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(27, 28, 30, 0.62);
+}
+
+.impactIntroTitle {
+  margin-top: 8px;
+  font-weight: 920;
+  letter-spacing: -0.02em;
+}
+
+.modelIntroCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.modelIntroCard::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+  background:
+    radial-gradient(520px 240px at 0% 0%, rgba(31, 135, 121, 0.14), transparent 62%),
+    radial-gradient(520px 240px at 100% 10%, rgba(216, 154, 78, 0.14), transparent 66%);
+  opacity: 0.8;
+}
+
+.modelIntroCard > * {
+  position: relative;
+}
+
+.modelIntroKicker {
+  font-size: 12px;
+  font-weight: 820;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(27, 28, 30, 0.62);
+}
+
+.modelIntroTitle {
+  margin-top: 8px;
+  font-weight: 920;
+  letter-spacing: -0.02em;
 }
 
 .bpPersona {

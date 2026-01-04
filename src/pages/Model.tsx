@@ -149,11 +149,20 @@ export function ModelPage() {
             </div>
           </Reveal>
           <Reveal delayMs={120}>
-            <PlaceholderImage
-              label="App overview placeholder"
-              sublabel="7 steps · one companion experience"
-              aspect="21/9"
-            />
+            <div className="card modelIntroCard" aria-label="App overview">
+              <div className="modelIntroKicker">Overview</div>
+              <div className="modelIntroTitle">Seven features, one companion</div>
+              <p className="p" style={{ marginTop: 10, marginBottom: 0 }}>
+                A single senior-first experience made of seven building blocks—each designed to feel supportive, calm,
+                and familiar.
+              </p>
+              <div className="dividerSoft" aria-hidden="true" />
+              <div className="bpPills" aria-label="Design pillars">
+                <span className="pill pillSoft">Familiarity</span>
+                <span className="pill pillSoft">Restraint</span>
+                <span className="pill pillSoft">Dignity</span>
+              </div>
+            </div>
           </Reveal>
         </div>
       </Reveal>

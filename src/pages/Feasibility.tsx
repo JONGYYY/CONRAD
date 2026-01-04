@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { PlaceholderImage } from '../components/PlaceholderImage'
 import { Reveal } from '../components/Reveal'
 
 export function FeasibilityPage() {
@@ -21,11 +20,29 @@ export function FeasibilityPage() {
             </div>
           </Reveal>
           <Reveal delayMs={120}>
-            <PlaceholderImage
-              label="App architecture placeholder"
-              sublabel="Senior app · Family app · Voice library · AI care logic"
-              aspect="21/9"
-            />
+            <div className="card feasibilityIntroCard" aria-label="App architecture summary">
+              <div className="feasibilityIntroKicker">Architecture</div>
+              <div className="feasibilityIntroTitle">A calm companion + a family space</div>
+              <p className="p" style={{ marginTop: 10, marginBottom: 0 }}>
+                Senior-facing companion experience, a family reassurance layer, and a privacy-first AI system—built around
+                consent, restraint, and predictable behavior.
+              </p>
+              <div className="dividerSoft" aria-hidden="true" />
+              <ul className="list" style={{ marginTop: 0 }}>
+                <li>
+                  <strong>Senior app:</strong> simple prompts, large type, easy pause
+                </li>
+                <li>
+                  <strong>Family app:</strong> reassurance + escalation preferences
+                </li>
+                <li>
+                  <strong>Voice library:</strong> consented loved-voice recordings
+                </li>
+                <li>
+                  <strong>AI care logic:</strong> fewer, better moments—timed for dignity
+                </li>
+              </ul>
+            </div>
           </Reveal>
         </div>
       </Reveal>

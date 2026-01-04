@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { PlaceholderImage } from '../components/PlaceholderImage'
 import { Reveal } from '../components/Reveal'
 
 export function ImpactPage() {
@@ -27,7 +26,21 @@ export function ImpactPage() {
             </div>
           </Reveal>
           <Reveal delayMs={120}>
-            <PlaceholderImage label="Impact photo placeholder" sublabel="Warm community moment" aspect="21/9" />
+            <div className="card impactIntroCard" aria-label="Impact summary">
+              <div className="impactIntroKicker">Impact, in practice</div>
+              <div className="impactIntroTitle">Less worry. More independence.</div>
+              <p className="p" style={{ marginTop: 10, marginBottom: 0 }}>
+                The goal isn’t “more alerts.” It’s fewer spirals, calmer routines, and faster escalation only when
+                something truly needs a human.
+              </p>
+              <div className="dividerSoft" aria-hidden="true" />
+              <div className="bpPills" aria-label="Impact themes">
+                <span className="pill pillSoft">Dignity</span>
+                <span className="pill pillSoft">Restraint</span>
+                <span className="pill pillSoft">Consent</span>
+                <span className="pill pillSoft">Trust</span>
+              </div>
+            </div>
           </Reveal>
         </div>
       </Reveal>

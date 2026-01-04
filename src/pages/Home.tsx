@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { PlaceholderImage } from '../components/PlaceholderImage'
 import { Reveal } from '../components/Reveal'
 
 export function HomePage() {
@@ -33,11 +32,13 @@ export function HomePage() {
           </Reveal>
 
           <Reveal className="heroVisual" delayMs={120}>
-            <PlaceholderImage
-              label="Warm photo placeholder"
-              sublabel="Senior + family (real-life, not tech)"
-              aspect="3/2"
-            />
+            <div className="heroPanel" aria-hidden="true">
+              <div className="heroPanelFrame">
+                <div className="heroPanelGlow" />
+                <div className="heroPanelBars" />
+                <div className="heroPanelDots" />
+              </div>
+            </div>
             <div className="caption">
               Our visual language is human-first: warm light, real moments, and quiet confidence.
             </div>
@@ -133,11 +134,9 @@ export function HomePage() {
               Warm, restrained, and human. GrandGuardian isn’t “tech-first”—it’s voice-first: comfort, familiarity, and
               calm presence.
             </p>
-            <PlaceholderImage
-              label="Photo placeholder"
-              sublabel="Warm, real-life moment · family voice connection"
-              aspect="16/9"
-            />
+            <div className="brandImageFrame" aria-hidden="true">
+              <div className="brandImageFill" />
+            </div>
           </Reveal>
         </div>
       </Reveal>
@@ -187,11 +186,9 @@ export function HomePage() {
             <div className="inspirationGrid">
               <div className="inspirationVisual">
                 <div className="polaroid">
-                  <PlaceholderImage
-                    label="Personal inspiration photo placeholder"
-                    sublabel="Grandparents · a moment that lights up"
-                    aspect="3/2"
-                  />
+                  <div className="polaroidPhoto" aria-hidden="true">
+                    <div className="polaroidPhotoInner" />
+                  </div>
                   <div className="polaroidCaption">“They lit up the moment they heard us.”</div>
                 </div>
                 <div className="voiceMotif" aria-hidden="true">
