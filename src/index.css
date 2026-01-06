@@ -1498,6 +1498,54 @@ a {
   color: rgba(27, 28, 30, 0.74);
 }
 
+.bpGraphRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.bpGraphCard {
+  padding: 14px;
+}
+
+.bpGraphHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.bpGraphTitle {
+  font-weight: 920;
+  letter-spacing: -0.02em;
+}
+
+.bpGraphMeta {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.bpGraphLink {
+  display: block;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(27, 28, 30, 0.12);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow);
+}
+
+.bpGraphLink:hover {
+  border-color: rgba(31, 135, 121, 0.22);
+}
+
+.bpGraphImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Team */
 .teamGrid {
   display: grid;
@@ -1746,6 +1794,10 @@ a {
   }
 
   .pricingGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bpGraphRow {
     grid-template-columns: 1fr;
   }
 

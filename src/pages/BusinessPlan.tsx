@@ -221,6 +221,83 @@ export function BusinessPlanPage() {
         </div>
       </Reveal>
 
+      <Reveal as="section" className="section sectionTint" delayMs={0}>
+        <div className="container">
+          <div className="sectionHeader">
+            <h2 className="h2">5-year forecast (visuals)</h2>
+            <p className="muted">Revenue, cost of revenue, and gross profit split by user type.</p>
+          </div>
+
+          <div className="bpGraphRow" aria-label="5-year forecast charts">
+            <Reveal className="card bpGraphCard" delayMs={40}>
+              <div className="bpGraphHeader">
+                <div className="bpGraphTitle">Revenue</div>
+                <div className="bpGraphMeta">DTC · B2B · Total</div>
+              </div>
+              <a
+                className="bpGraphLink"
+                href="/images/Graphs/grandguardian_revenue_lines_by_type_reco_1.png"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Revenue forecast chart in a new tab"
+              >
+                <img
+                  className="bpGraphImg"
+                  src="/images/Graphs/grandguardian_revenue_lines_by_type_reco_1.png"
+                  alt="5-year forecast: Revenue by user type (DTC, B2B, Total), years Y1–Y5."
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </Reveal>
+
+            <Reveal className="card bpGraphCard" delayMs={90}>
+              <div className="bpGraphHeader">
+                <div className="bpGraphTitle">Cost of revenue</div>
+                <div className="bpGraphMeta">DTC · B2B · Total</div>
+              </div>
+              <a
+                className="bpGraphLink"
+                href="/images/Graphs/grandguardian_cogs_lines_by_type_reco_1.png"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Cost of revenue forecast chart in a new tab"
+              >
+                <img
+                  className="bpGraphImg"
+                  src="/images/Graphs/grandguardian_cogs_lines_by_type_reco_1.png"
+                  alt="5-year forecast: Cost of revenue by user type (DTC, B2B, Total), years Y1–Y5."
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </Reveal>
+
+            <Reveal className="card bpGraphCard" delayMs={140}>
+              <div className="bpGraphHeader">
+                <div className="bpGraphTitle">Gross profit</div>
+                <div className="bpGraphMeta">DTC · B2B · Total</div>
+              </div>
+              <a
+                className="bpGraphLink"
+                href="/images/Graphs/grandguardian_profit_lines_by_type_reco.png"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Gross profit forecast chart in a new tab"
+              >
+                <img
+                  className="bpGraphImg"
+                  src="/images/Graphs/grandguardian_profit_lines_by_type_reco.png"
+                  alt="5-year forecast: Gross profit by user type (DTC, B2B, Total), years Y1–Y5."
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </Reveal>
+          </div>
+        </div>
+      </Reveal>
+
       <Reveal as="section" className="section" delayMs={0}>
         <div className="container">
           <Reveal className="ctaRow" delayMs={60}>
