@@ -99,7 +99,7 @@ const steps: ModelStep[] = [
     why: 'Turns routines into reassurance—supportive, familiar, and easy to follow.',
     imageLabel: 'Feature 5 placeholder',
     imageSublabel: 'Medication + events → loved-voice reminders',
-    imageSrc: '/images/feature5.png',
+    imageSrc: '/images/feature5.jpg',
   },
   {
     title: 'Feature 6: SOS - Heart Rate Monitoring',
