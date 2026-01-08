@@ -104,7 +104,7 @@ export function TeamPage() {
               </ul>
             </Reveal>
             <Reveal className="card" delayMs={120}>
-              <h2 className="h2">Contact + updates</h2>
+              <h2 className="h2">Contact + Video Links</h2>
               {/* <p className="p">
                 Add a real email and an updates link when you’re ready. For now, these are safe placeholders.
               </p> */}
@@ -112,16 +112,24 @@ export function TeamPage() {
                 <div className="contactRow">
                   <div className="contactLabel">Email</div>
                   <div className="contactValue">
-                    <a className="textLink" href="mailto:hello@grandguardian.example">
-                      hello@grandguardian.example
+                    <a className="textLink" href="mailto:grandguardianapp@gmail.com">
+                      grandguardianapp@gmail.com
                     </a>
                   </div>
                 </div>
                 <div className="contactRow">
-                  <div className="contactLabel">Updates</div>
+                  <div className="contactLabel">Product Video Link</div>
+                  <div className="contactValue">
+                    <a className="textLink" href="https://youtu.be/5-Fyv4fC074" target="_blank" rel="noreferrer">
+                      https://youtu.be/5-Fyv4fC074
+                    </a>
+                  </div>
+                </div>
+                <div className="contactRow">
+                  <div className="contactLabel">Business Plan Video Link</div>
                   <div className="contactValue">
                     <a className="textLink" href="#" onClick={(e) => e.preventDefault()}>
-                      Placeholder updates link
+                      Placeholder business plan video link
                     </a>
                   </div>
                 </div>
