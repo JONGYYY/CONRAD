@@ -300,7 +300,9 @@ export function BusinessPlanPage() {
             <div className="calloutTitle">Takeaway</div>
             <div className="calloutBody">
               As volume grows across DTC and B2B channels, revenue scales faster than cost of revenue—supporting
-              expanding gross profit and stronger unit economics over time.
+              expanding gross profit and stronger unit economics over time. The forecast reflects a conservative
+              baseline (Basic base fee only); actual performance is expected to be higher with upgrades, add-ons, and
+              B2B licensing.
             </div>
           </div>
         </div>
