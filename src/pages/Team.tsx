@@ -125,14 +125,6 @@ export function TeamPage() {
                     </a>
                   </div>
                 </div>
-                <div className="contactRow">
-                  <div className="contactLabel">Business Plan Video Link</div>
-                  <div className="contactValue">
-                    <a className="textLink" href="#" onClick={(e) => e.preventDefault()}>
-                      Placeholder business plan video link
-                    </a>
-                  </div>
-                </div>
               </div>
 
               <div className="ctaRow">
