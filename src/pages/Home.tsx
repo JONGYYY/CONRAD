@@ -114,17 +114,6 @@ export function HomePage() {
               they love.
             </p>
           </Reveal>
-
-          <Reveal className="card" delayMs={120}>
-            <h2 className="h2">What the brand feels like</h2>
-            <p className="p">
-              Warm, restrained, and human. GrandGuardian isn’t “tech-first”—it’s voice-first: comfort, familiarity, and
-              calm presence.
-            </p>
-            <div className="brandImageFrame" aria-hidden="true">
-              <div className="brandImageFill" />
-            </div>
-          </Reveal>
         </div>
       </Reveal>
 
@@ -170,28 +159,15 @@ export function HomePage() {
         <div className="container">
           <Reveal className="narrative" delayMs={40}>
             <h2 className="h2">Personal Inspiration</h2>
-            <div className="inspirationGrid">
-              <div className="inspirationVisual">
-                <div className="polaroid">
-                  <div className="polaroidPhoto" aria-hidden="true">
-                    <div className="polaroidPhotoInner" />
-                  </div>
-                  <div className="polaroidCaption">“They lit up the moment they heard us.”</div>
-                </div>
-              </div>
-
-              <div className="inspirationText">
-                <p className="letter">
-                  <span className="dropCap">O</span>ur inspiration came from our grandparents. They lit up every time
-                  they heard our voices, even when it was virtually.
-                </p>
-                <p className="letter">
-                  That’s when we realized — a family voice isn’t just sound, it’s emotional care.
-                </p>
-                <p className="letter" style={{ marginBottom: 0 }}>
-                  So we created GrandGuardian to bring that comfort into everyday moments.
-                </p>
-              </div>
+            <div className="inspirationText">
+              <p className="letter">
+                <span className="dropCap">O</span>ur inspiration came from our grandparents. They lit up every time they
+                heard our voices, even when it was virtually.
+              </p>
+              <p className="letter">That’s when we realized — a family voice isn’t just sound, it’s emotional care.</p>
+              <p className="letter" style={{ marginBottom: 0 }}>
+                So we created GrandGuardian to bring that comfort into everyday moments.
+              </p>
             </div>
             <div className="ctaRow">
               <Link to="/model" className="button buttonPrimary">

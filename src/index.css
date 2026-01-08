@@ -495,28 +495,7 @@ a {
 }
 
 /* Home: personal inspiration vignette */
-.inspirationGrid {
-  display: grid;
-  grid-template-columns: 0.92fr 1.08fr;
-  gap: 18px;
-  align-items: start;
-  margin-top: 12px;
-}
-
-.polaroid {
-  border-radius: var(--radius-lg);
-  padding: 12px;
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(27, 28, 30, 0.12);
-  box-shadow: var(--shadow);
-}
-
-.polaroidCaption {
-  margin-top: 10px;
-  font-weight: 760;
-  color: rgba(27, 28, 30, 0.74);
-  font-size: 13px;
-}
+/* (visual block removed; keep text-only styling) */
 
 .letter {
   margin: 0 0 12px;
@@ -686,38 +665,6 @@ a {
     radial-gradient(circle, rgba(27, 28, 30, 0.18) 2px, transparent 3px) 0 0 / 16px 8px,
     linear-gradient(90deg, rgba(31, 135, 121, 0.18), rgba(216, 154, 78, 0.18));
   opacity: 0.75;
-}
-
-.brandImageFrame {
-  margin-top: 12px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid rgba(27, 28, 30, 0.12);
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: var(--shadow);
-}
-
-.brandImageFill {
-  aspect-ratio: 16 / 9;
-  background:
-    radial-gradient(520px 240px at 20% 0%, rgba(31, 135, 121, 0.18), transparent 60%),
-    radial-gradient(520px 240px at 100% 20%, rgba(216, 154, 78, 0.18), transparent 62%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.4));
-}
-
-.polaroidPhoto {
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(27, 28, 30, 0.12);
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.polaroidPhotoInner {
-  aspect-ratio: 3 / 2;
-  background:
-    radial-gradient(520px 240px at 20% 0%, rgba(31, 135, 121, 0.16), transparent 60%),
-    radial-gradient(520px 240px at 100% 20%, rgba(216, 154, 78, 0.16), transparent 62%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.38));
 }
 
 /* Intro */
