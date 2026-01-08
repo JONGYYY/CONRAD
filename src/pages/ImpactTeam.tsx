@@ -46,7 +46,7 @@ export function ImpactTeamPage() {
               <div className="impactIntroKicker">Impact, in practice</div>
               <div className="impactIntroTitle">Less worry. More independence.</div>
               <p className="p" style={{ marginTop: 10, marginBottom: 0 }}>
-                The goal isn’t “more alerts.” It’s fewer spirals, calmer routines, and faster escalation only when
+                The goal is not more alerts. It is fewer spirals, calmer routines, and faster escalation only when
                 something truly needs a human.
               </p>
               <div className="dividerSoft" aria-hidden="true" />
@@ -65,14 +65,14 @@ export function ImpactTeamPage() {
         <div className="container">
           <div className="sectionHeader">
             <h2 className="h2">Impact goals (target metrics)</h2>
-            <p className="muted">These are intentionally human-centered and judge-friendly.</p>
+            <p className="muted">Clear, people-first outcomes that are easy to understand.</p>
           </div>
 
           <div className="metrics">
             <Reveal className="metricCard" delayMs={40}>
               <div className="metricValue">↓</div>
               <div className="metricTitle">Reduced anxiety</div>
-              <div className="metricBody">Fewer “Are you okay?” spirals—measured by caregiver stress surveys.</div>
+              <div className="metricBody">Fewer “Are you okay?” spirals, measured by caregiver stress surveys.</div>
             </Reveal>
             <Reveal className="metricCard" delayMs={90}>
               <div className="metricValue">↑</div>
@@ -158,7 +158,7 @@ export function ImpactTeamPage() {
             <Reveal className="card" delayMs={60}>
               <h2 className="h2">Build Log</h2>
               <p className="muted">
-                Transparency without app mechanics—this “broadcasts what we’re working on” in a judge-friendly way.
+                A simple log of what we built and what we learned along the way.
               </p>
               <ul className="list">
                 {buildLog.map((entry) => (

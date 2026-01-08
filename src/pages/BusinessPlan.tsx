@@ -10,8 +10,8 @@ export function BusinessPlanPage() {
             <div className="eyebrow">Business Plan</div>
             <h1 className="h1">A business that scales calm</h1>
             <p className="lead">
-              GrandGuardian is a subscription-based senior care technology company built around one goal: make
-              aging-at-home support scalable, affordable, and easy for families to adopt.
+              GrandGuardian is a subscription-based senior care technology company built to make aging at home scalable,
+              affordable, and easy for families to adopt.
             </p>
             <div className="introLinks">
               <Link className="textLink" to="/feasibility">
@@ -49,7 +49,7 @@ export function BusinessPlanPage() {
         <div className="container">
           <div className="sectionHeader">
             <h2 className="h2">Business model snapshot</h2>
-            <p className="muted">The “one-minute” version: customers, pricing, and launch economics.</p>
+            <p className="muted">A quick snapshot: customers, pricing, and launch economics.</p>
           </div>
 
           <div className="metrics" aria-label="Business model key numbers">
@@ -71,7 +71,7 @@ export function BusinessPlanPage() {
             <Reveal className="metricCard" delayMs={190}>
               <div className="metricValue">GM</div>
               <div className="metricTitle">Gross profit at launch</div>
-              <div className="metricBody">~$1,270–$1,570/month before operating expenses.</div>
+              <div className="metricBody">~$1,270 to $1,570 per month before operating expenses.</div>
             </Reveal>
           </div>
         </div>
@@ -129,7 +129,7 @@ export function BusinessPlanPage() {
               <h3 className="h3">Institutional licensing</h3>
               <p className="p">
                 We expand through senior living communities and home care agencies with pricing of about{' '}
-                <strong>$8–$15 per resident/month</strong>.
+                <strong>$8 to $15 per resident per month</strong>.
               </p>
               <ul className="list">
                 <li>
@@ -150,7 +150,7 @@ export function BusinessPlanPage() {
               </div>
               <div className="bpPersona">
                 <div className="bpPersonaTitle">Senior (primary user)</div>
-                <div className="bpPersonaBody">Gets a simple, trusted experience that feels like care—not monitoring.</div>
+                <div className="bpPersonaBody">Gets a simple, trusted experience that feels like care, not monitoring.</div>
               </div>
             </Reveal>
           </div>
@@ -194,7 +194,7 @@ export function BusinessPlanPage() {
             <h2 className="h2">Launch unit economics (100 users)</h2>
             <p className="p">
               Cost of revenue scales efficiently (cloud + usage-based AI + a fixed voice minimum), totaling about{' '}
-              <strong>$830–$1,130/month</strong> at ~100 users.
+              <strong>$830 to $1,130 per month</strong> at about 100 users.
             </p>
             <div className="stackList" aria-label="Economics breakdown">
               <div className="stackItem">
@@ -203,11 +203,11 @@ export function BusinessPlanPage() {
               </div>
               <div className="stackItem">
                 <div className="stackTitle">Cost of revenue</div>
-                <div className="stackBody">~$830–$1,130/month (cloud + AI usage + voice infrastructure).</div>
+                <div className="stackBody">~$830 to $1,130 per month (cloud + AI usage + voice infrastructure).</div>
               </div>
               <div className="stackItem">
                 <div className="stackTitle">Gross profit</div>
-                <div className="stackBody">~$1,270–$1,570/month at launch; margins improve with volume.</div>
+                <div className="stackBody">~$1,270 to $1,570 per month at launch; margins improve with volume.</div>
               </div>
             </div>
             <div className="callout">
@@ -244,7 +244,7 @@ export function BusinessPlanPage() {
                 <img
                   className="bpGraphImg"
                   src="/images/Graphs/grandguardian_revenue_lines_by_type_reco_1.png"
-                  alt="5-year forecast: Revenue by user type (DTC, B2B, Total), years Y1–Y5."
+                  alt="5-year forecast: Revenue by user type (DTC, B2B, Total), years Y1 to Y5."
                   loading="lazy"
                   decoding="async"
                 />
@@ -266,7 +266,7 @@ export function BusinessPlanPage() {
                 <img
                   className="bpGraphImg"
                   src="/images/Graphs/grandguardian_cogs_lines_by_type_reco_1.png"
-                  alt="5-year forecast: Cost of revenue by user type (DTC, B2B, Total), years Y1–Y5."
+                  alt="5-year forecast: Cost of revenue by user type (DTC, B2B, Total), years Y1 to Y5."
                   loading="lazy"
                   decoding="async"
                 />
@@ -288,7 +288,7 @@ export function BusinessPlanPage() {
                 <img
                   className="bpGraphImg"
                   src="/images/Graphs/grandguardian_profit_lines_by_type_reco.png"
-                  alt="5-year forecast: Gross profit by user type (DTC, B2B, Total), years Y1–Y5."
+                  alt="5-year forecast: Gross profit by user type (DTC, B2B, Total), years Y1 to Y5."
                   loading="lazy"
                   decoding="async"
                 />
@@ -299,10 +299,10 @@ export function BusinessPlanPage() {
           <div className="callout" style={{ marginTop: 14 }}>
             <div className="calloutTitle">Takeaway</div>
             <div className="calloutBody">
-              As volume grows across DTC and B2B channels, revenue scales faster than cost of revenue—supporting
-              expanding gross profit and stronger unit economics over time. The forecast reflects a conservative
-              baseline (Basic base fee only); actual performance is expected to be higher with upgrades, add-ons, and
-              B2B licensing.
+              As volume grows across DTC and B2B channels, revenue scales faster than cost of revenue. That supports
+              expanding gross profit and stronger unit economics over time. This forecast reflects a conservative
+              baseline (Basic base fee only). Actual performance is expected to improve with upgrades, add-ons, and B2B
+              licensing.
             </div>
           </div>
         </div>

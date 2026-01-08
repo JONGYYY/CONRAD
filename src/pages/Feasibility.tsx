@@ -10,8 +10,8 @@ export function FeasibilityPage() {
             <div className="eyebrow">Feasibility</div>
             <h1 className="h1">Building the GrandGuardian app: can it work?</h1>
             <p className="lead">
-              Yes—because we’re building an app, not a fantasy: a senior-facing companion experience, a family space for
-              reassurance, and a privacy-first AI layer that uses consented voice to deliver warmth, support, and safety.
+              Yes. We are building something real: a senior-facing companion experience, a family space for reassurance,
+              and a privacy-first AI layer that uses consented voice to deliver warmth, support, and safety.
             </p>
             <div className="introLinks">
               <Link className="textLink" to="/business-plan">
@@ -24,8 +24,8 @@ export function FeasibilityPage() {
               <div className="feasibilityIntroKicker">Architecture</div>
               <div className="feasibilityIntroTitle">A calm companion + a family space</div>
               <p className="p" style={{ marginTop: 10, marginBottom: 0 }}>
-                Senior-facing companion experience, a family reassurance layer, and a privacy-first AI system—built around
-                consent, restraint, and predictable behavior.
+                A senior companion, a family reassurance layer, and a privacy-first AI system built around consent,
+                restraint, and predictable behavior.
               </p>
               <div className="dividerSoft" aria-hidden="true" />
               <ul className="list" style={{ marginTop: 0 }}>
@@ -39,7 +39,7 @@ export function FeasibilityPage() {
                   <strong>Voice library:</strong> consented loved-voice recordings
                 </li>
                 <li>
-                  <strong>AI care logic:</strong> fewer, better moments—timed for dignity
+                  <strong>AI care logic:</strong> fewer, better moments timed for dignity
                 </li>
               </ul>
             </div>
@@ -77,8 +77,8 @@ export function FeasibilityPage() {
             <div className="callout">
               <div className="calloutTitle">MVP goal</div>
               <div className="calloutBody">
-                Prove that a loved voice + AI timing can reduce worry and increase confidence—without making seniors
-                feel monitored.
+                Prove that a loved voice and good timing can reduce worry and increase confidence, without making
+                seniors feel monitored.
               </div>
             </div>
             <ul className="list">
@@ -104,7 +104,7 @@ export function FeasibilityPage() {
           <Reveal className="card" delayMs={40}>
             <h2 className="h2">How we validate the app</h2>
             <p className="p">
-              We validate with real people, measuring whether the app feels like love—not noise.
+              We validate with real people and measure whether the experience feels supportive, not noisy.
             </p>
             <ul className="list">
               <li>

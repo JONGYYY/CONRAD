@@ -91,12 +91,12 @@ const steps: ModelStep[] = [
   },
   {
     title: 'Feature 5: Reminders',
-    what: 'Smart reminders for medications and events—spoken in a loved one’s voice.',
+    what: 'Smart reminders for medications and events, spoken in a loved one’s voice.',
     how: [
       'Users can add, edit, and delete medication and event reminders.',
       'Text-to-speech uses a loved one’s voice to announce upcoming appointments, events, and medication intake times.',
     ],
-    why: 'Turns routines into reassurance—supportive, familiar, and easy to follow.',
+    why: 'Turns routines into reassurance that feels supportive, familiar, and easy to follow.',
     imageLabel: 'Feature 5 placeholder',
     imageSublabel: 'Medication + events → loved-voice reminders',
     imageSrc: '/images/feature5.jpg',
@@ -110,7 +110,7 @@ const steps: ModelStep[] = [
       'When the user’s heart rate exceeds the pre-set range due to an unhealthy condition or sudden fall, the sensor captures it immediately and the app shows “out-of-range.”',
       'A real-time message is sent to the emergency contact. At the same time, alarms go off to alert people around, calling for help.',
     ],
-    why: 'Escalates quickly when it matters most—help can arrive sooner with less guesswork.',
+    why: 'Escalates quickly when it matters most so help can arrive sooner with less guesswork.',
     imageLabel: 'Feature 6 placeholder',
     imageSublabel: 'Bluetooth HR → thresholds → SOS + alarm',
     imageSrc: '/images/feature6.jpg',
@@ -119,11 +119,11 @@ const steps: ModelStep[] = [
     title: 'Feature 7: Invisible Fall Detection',
     what: 'Hands-free fall detection using the phone’s motion sensors (no button or wearable needed).',
     how: [
-      'Detects falls using the phone’s motion sensors — no button or wearable device needed.',
+      'Detects falls using the phone’s motion sensors, no button or wearable device needed.',
       'Triggers alert if a fall is detected and not recovered within 5 seconds.',
       'Reduces false alarms from accidental phone drops.',
     ],
-    why: 'Discreet safety that stays in the background—ready when needed, quiet when not.',
+    why: 'Discreet safety that stays in the background, ready when needed and quiet when not.',
     imageLabel: 'Feature 7 placeholder',
     imageSublabel: 'Motion sensors → detect → confirm → alert',
     imageSrc: '/images/feature7.jpg',
@@ -139,8 +139,8 @@ export function ModelPage() {
             <div className="eyebrow">The App</div>
             <h1 className="h1">The App</h1>
             <p className="lead">
-              GrandGuardian is designed as a single companion experience made of seven building blocks—each one focused
-              on safety, comfort, and connection through a loved one’s voice.
+              GrandGuardian is a single companion experience made of seven building blocks, each focused on safety,
+              comfort, and connection through a loved one’s voice.
             </p>
             <div className="introLinks">
               <Link className="textLink" to="/feasibility">
@@ -153,8 +153,8 @@ export function ModelPage() {
               <div className="modelIntroKicker">Overview</div>
               <div className="modelIntroTitle">Seven features, one companion</div>
               <p className="p" style={{ marginTop: 10, marginBottom: 0 }}>
-                A single senior-first experience made of seven building blocks—each designed to feel supportive, calm,
-                and familiar.
+                A senior-first experience made of seven building blocks, designed to feel supportive, calm, and
+                familiar.
               </p>
               <div className="dividerSoft" aria-hidden="true" />
               <div className="bpPills" aria-label="Design pillars">
@@ -230,7 +230,7 @@ export function ModelPage() {
                 <div className="pillarTitle">Familiarity</div>
                 <div className="pillarLine" aria-hidden="true" />
                 <div className="pillarText">
-                  The comfort of a loved voice: memory, warmth, and “I’m here” — delivered in a way that feels personal.
+                  The comfort of a loved voice: memory, warmth, and “I’m here”, delivered in a way that feels personal.
                 </div>
               </div>
               <div className="pillarBase" aria-hidden="true" />
@@ -263,7 +263,7 @@ export function ModelPage() {
                 <div className="pillarTitle">Dignity</div>
                 <div className="pillarLine" aria-hidden="true" />
                 <div className="pillarText">
-                  Support that asks, not takes. Consent, clarity, and control—so help never feels like being watched.
+                  Support that asks, not takes. Consent, clarity, and control so help never feels like being watched.
                 </div>
               </div>
               <div className="pillarBase" aria-hidden="true" />

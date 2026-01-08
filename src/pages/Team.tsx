@@ -95,7 +95,7 @@ export function TeamPage() {
             <Reveal className="card" delayMs={60}>
               <h2 className="h2">Build Log</h2>
               {/* <p className="muted">
-                Transparency without app mechanics—this “broadcasts what we’re working on” in a judge-friendly way.
+                A simple log of what we built and what we learned along the way.
               </p> */}
               <ul className="list">
                 {buildLog.map((entry) => (
