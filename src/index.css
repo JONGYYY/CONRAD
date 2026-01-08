@@ -518,29 +518,6 @@ a {
   font-size: 13px;
 }
 
-.voiceMotif {
-  margin-top: 12px;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(31, 135, 121, 0.18);
-  background: rgba(31, 135, 121, 0.06);
-  padding: 10px 12px;
-}
-
-.voiceBars {
-  height: 22px;
-  border-radius: 999px;
-  background:
-    linear-gradient(90deg, rgba(31, 135, 121, 0.18), rgba(216, 154, 78, 0.18)),
-    repeating-linear-gradient(
-      90deg,
-      rgba(27, 28, 30, 0.38) 0,
-      rgba(27, 28, 30, 0.38) 2px,
-      transparent 2px,
-      transparent 8px
-    );
-  mask-image: radial-gradient(220px 32px at 0% 50%, black 50%, transparent 100%);
-}
-
 .letter {
   margin: 0 0 12px;
   color: rgba(27, 28, 30, 0.82);

@@ -178,9 +178,6 @@ export function HomePage() {
                   </div>
                   <div className="polaroidCaption">“They lit up the moment they heard us.”</div>
                 </div>
-                <div className="voiceMotif" aria-hidden="true">
-                  <div className="voiceBars" />
-                </div>
               </div>
 
               <div className="inspirationText">

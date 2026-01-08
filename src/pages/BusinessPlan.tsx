@@ -7,7 +7,7 @@ export function BusinessPlanPage() {
       <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
           <Reveal delayMs={40}>
-            <div className="eyebrow">Page 4 · Business Plan</div>
+            <div className="eyebrow">Business Plan</div>
             <h1 className="h1">A business that scales calm</h1>
             <p className="lead">
               GrandGuardian is a subscription-based senior care technology company built around one goal: make
@@ -294,6 +294,14 @@ export function BusinessPlanPage() {
                 />
               </a>
             </Reveal>
+          </div>
+
+          <div className="callout" style={{ marginTop: 14 }}>
+            <div className="calloutTitle">Takeaway</div>
+            <div className="calloutBody">
+              As volume grows across DTC and B2B channels, revenue scales faster than cost of revenue—supporting
+              expanding gross profit and stronger unit economics over time.
+            </div>
           </div>
         </div>
       </Reveal>

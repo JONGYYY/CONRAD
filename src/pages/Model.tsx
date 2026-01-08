@@ -136,7 +136,7 @@ export function ModelPage() {
       <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
           <Reveal delayMs={40}>
-            <div className="eyebrow">Page 2 · The App</div>
+            <div className="eyebrow">The App</div>
             <h1 className="h1">The App</h1>
             <p className="lead">
               GrandGuardian is designed as a single companion experience made of seven building blocks—each one focused

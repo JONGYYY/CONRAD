@@ -7,7 +7,7 @@ export function FeasibilityPage() {
       <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
           <Reveal delayMs={40}>
-            <div className="eyebrow">Page 3 · Feasibility</div>
+            <div className="eyebrow">Feasibility</div>
             <h1 className="h1">Building the GrandGuardian app: can it work?</h1>
             <p className="lead">
               Yes—because we’re building an app, not a fantasy: a senior-facing companion experience, a family space for

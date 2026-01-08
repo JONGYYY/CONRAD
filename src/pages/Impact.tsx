@@ -7,7 +7,7 @@ export function ImpactPage() {
       <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
           <Reveal delayMs={40}>
-            <div className="eyebrow">Page 5 · Impact</div>
+            <div className="eyebrow">Impact</div>
             <h1 className="h1">Why it matters</h1>
             <p className="lead">
               GrandGuardian is built around a simple belief: when support preserves dignity, independence lasts longer

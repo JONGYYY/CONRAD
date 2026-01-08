@@ -29,7 +29,7 @@ export function ImpactTeamPage() {
       <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
           <Reveal delayMs={40}>
-            <div className="eyebrow">Page 4 · Impact + Team</div>
+            <div className="eyebrow">Impact + Team</div>
             <h1 className="h1">Why it matters, and why us</h1>
             <p className="lead">
               GrandGuardian is built around a simple belief: when support preserves dignity, independence lasts longer

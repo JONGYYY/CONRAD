@@ -41,7 +41,7 @@ export function TeamPage() {
       <Reveal as="section" className="pageIntro" delayMs={0}>
         <div className="container introGrid">
           <Reveal delayMs={40}>
-            <div className="eyebrow">Page 6 · Team</div>
+            <div className="eyebrow">Team</div>
             <h1 className="h1">Who we are</h1>
             <p className="lead">
               A Voice of Love for the Elderly Powered by AI.
@@ -149,8 +149,8 @@ export function TeamPage() {
           <div className="spacer" />
 
           <Reveal className="quote" delayMs={140}>
-            “We’re building a concept that feels human first: calm, consented, and easy to adopt.”
-            <div className="quoteBy">Team principle</div>
+            “We’re building a human-first experience: calm, consented, and effortless.”
+            <div className="quoteBy">Team Principle</div>
           </Reveal>
         </div>
       </Reveal>
